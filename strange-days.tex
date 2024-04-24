@@ -1,52 +1,16 @@
 %%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
-
 \documentclass[12pt]{article}
-
-\usepackage[romanian]{babel}
-\usepackage[de]{luaquotes}
-
-%% LAYOUT AND FONTS %%
 \usepackage[a4paper, margin=1in, total={6in, 8in}]{geometry}
 \usepackage{setspace}
 \onehalfspacing
 \setlength{\parindent}{20pt}
 
+\usepackage[romanian]{babel}
+\usepackage[de]{luaquotes}
+
 %% BACKGROUNDS FOR CAPTIONS %%
 \usepackage{xcolor}
 \definecolor{graymine}{HTML}{EDEBEB}
-
-%% CAPTIONS %%
-\usepackage{caption}
-\captionsetup{
-	margin=10pt,
-	font=small,
-	labelfont=bf,
-	justification=justified
-}
-\captionsetup{width=0.6\textwidth}
-\DeclareCaptionFormat{custom}
-{%
-	\textit{#1#2\small #3}
-}
-
-\DeclareCaptionLabelFormat{custom}
-{%
-	#1 \textbf{#2}
-}
-
-% Separator style
-\DeclareCaptionLabelSeparator{custom}{-- }
-
-\captionsetup
-{
-	format=custom,%
-	labelformat=custom,%
-	labelsep=custom
-}
-
-%% IMAGES %%
-\usepackage{graphicx}
-\usepackage{wrapfig}
 
 %% QUOTATION %%
 \usepackage[
@@ -72,269 +36,55 @@ sorting=nyt]{biblatex}
 
 \begin{document}
 	 	
-	\maketitle
+\maketitle
 	 	
-	 
+Cyberpunk a început ca o mișcare de renaștere science fiction, în mare parte datorită romanului \textit{Neuromancer} (William Gibson).\footnote{Există zvonuri cum că ori Bigelow \parencite{Salza1994a}, ori scenaristul și producătorul filmului, James Cameron \parencite{Henry2023a}, ar fi trebuit să adapteze povestirea \textit{Burning Chrome} a lui Gibson, însă proiectul nu s-a putut materializa (în mare parte deoarece nu era pe placul lui Gibson). Ce a rămas din acea adaptare s-a transformat în cele din urmă în \textit{Strange Days}.} Spre deosebire de utopianismul caracteristic SF-urilor precendente, cyberpunk pune accentul pe conflictul dintre om și mașinărie, o criză a identității și o stare de anxietate care doar s-a complicat odată cu trecerea deceniilor.\par
 
-	 	
-	 	\section{Concurența este rezultatul scopurilor coincidentale}
-	 	Care este motivul, însă, pentru care apare concurență asupra celor mai multe beneficii, pentru propriul câștig? Hobbes declară că a ne ataca unii pe alți este în natura noastră, deoarece căutăm mereu să ne maximizăm propriul câștig. Conflictele apar tocmai din cauza egalității dintre noi, deoarece aceasta ne determină să avem și scopuri similare și să avem speranța de a le atinge cât se poate de mult. În capitolul al XVIII-lea, Hobbes spune că războiul este \dedouble urmarea necesară a pasiunilor naturale ale omului\sqtworight.\par 
-	 	
-	 	Competiția are, prin urmare, o natură distructivă. Crezând că celălalt ne-ar doborî pentru propriul său câștig dacă va considera că acest lucru este necesar, ne asumăm o stare de dominație preventivă în scopul propriei siguranțe \parencite{ailonPhenomenologyHomoEconomicus2020}.\par
-	 	
-	 	Suveranul se află într-o poziție excepțională printre supușii săi, deoarece are cea mai înaltă putere și are, prin urmare, și cel mai mult de pierdut în cazul unei rebeliuni împotriva sa.\par
-	 	
-	 	Celălalt motiv pentru certurile dintre oameni, în afara neîncrederii create din cauza concurenței, este \textbf{gloria}, deseori căutată pentru nimicuri. Atacurile sunt motivate de nevoia de a ne crește reputația printre semenii noștri, deoarece simțim nevoia să fim prețuiți de ceilalți, chiar și pe baze puerile.\par
-	 	
-	 	\section{Starea naturală este războiul}
-	 	
-	 	În capitolul al XIII-lea, Hobbes postulează că lăsând societatea să opereze în starea naturală am lăsa cale liberă războaielor civile. Conflictele interne într-o comunitate reies tocmai din faptul că fiecare este liber să judece oricare situație, aranjament politic, etc. \textbf{conform propriei rațiuni.} Un guvern puternic și unit poate să evite această situație, deoarece acționează ca arbitru în ceea ce privește conduita fiecărui cetățean, eliminând relativizarea. Hobbes își dezvoltă teza asupra necesității suveranității în secțiunile următoare (vezi \ref{sec:necesitate-suveranitate}). \par
-	 	
-	 	Această poziție a fost atacată de nenumărate ori, începând cu John Locke în al său \dedouble Al doilea tratat despre cârmuire \sqtworight, considerând că starea naturală este preferabilă supunerii unei puteri arbitrare a guvernului.\par
-	 	
-	 	\section{Război și pace}
-	 	
-	 	Ideea lui Hobbes despre război nu se rezumă doar la luptele fizice care au loc pe front, ci la dispoziția către agresivitate, presupunând astfel o stare generală de frică și tensiune. Războiul este \textbf{antitteza} unei vieți fericite. În absența siguranței, fiecare trebuie să și-o regăsească prin forța brută proprie, ceea ce consumă foarte multă energie și timp. Aceste luxuri ar fi putut pe timp de pace să fie folosite mai degrabă în alte demersuri care contribuie la dezvoltarea umană (ex. artele și meșteșugurile).\par
-	 	
-	 	Prin urmare, pare a fi o \textbf{regulă generală a rațiunii} că vom căuta pacea cu orice preț, iar dacă nu vom putea, vom încerca să ne folosim de război pentru propriul nostru câștig, în spiritul supraviețuirii. Mai mult, este dreptul nostru să ne apărăm oricum considerăm că este posibil și necesar.
-	 	
-	 	\section{Renunțarea voluntară la drepturi pentru încheierea unei convenții}
-	 	Fiind ființe raționale, oamenii înțeleg necesitatea renunțării la anumite drepturi cum ar fi cel de a interveni în spațiul altui om. În absența unei astfel de restricții, oricine poate fi liber să te atace, dacă acesta consideră că i-ar aduce cel mai mare bine în acel moment. Renunțarea la drepturi este un act voluntar, deoarece îți prețuiești viața și-ți dorești să o conservi cât mai bine. Este un act de recunoaștere al propriei frici de moarte, care vine tot din pasiuni.\par
-	 	
-	 	De asemenea, nu poți crede că ai un alt motiv pentru a renunța la aceste drepturi în afară de cel al autoconservării, căci altfel renunțarea ta și-ar pierde însemnătatea și nu ți-ar mai putea aduce protecție. Prin convenții se pot stabili legi, care fac posibilă conștientizarea lucrurilor care sunt drepte sau nedrepte.\par
-	 	
-	 	Cu toate acestea, simple cuvinte nu pot produce obligații \parencite{Hobbesa} dacă sunt folosite prin raportare la viitor. Spunând că mâine urmează să-ți cedez un drept, nu există o certitudine dincolo de cea a cuvântului (slabă, fiind) că acest drept chiar va fi cedat. Este un act al voinței viitoare al celui care-și cedează drepturile.
-	 	
-	 	În schimb, a spune că suveranul va folosi dreptul pe care tu i l-ai încredințat acum reprezintă un act \textbf{sigur} al voinței tale, în prezent. Este asemeni blocării banilor tăi de către bancă pentru a fi folosiți ulterior într-o tranzacție. 
-	 	
-	 	\begin{displayquote}[{\cite[p. 79-80]{Hobbesa}}]
-	 		...cele mai mari neajunsuri care, în orice formă de cârmuire, li se pot în general întâmpla oamenilor sunt aproape neînsemnate în comparație cu nenorocirile și calamitățile îngrozitoare care însoțesc războiul civil ori starea de dezbinare a celor lipsiți de stăpân și nesupuși legilor sau unei puteri constrângătoare, care să-i lege de mâini, împiedicându-i astfel să se dedea la jafuri și răzbunări.
-	 	\end{displayquote}
-	 	
-	 	\section{Formarea convențiilor}
-	 	
-	 	Convențiile (numite și \dedouble contracte\sqtworight) sunt utile deoarece forțează indivizii aflați sub puterea suverană să se respecte unii pe alții. Chiar dacă nu mai ai control asupra propriilor drepturi, ești conștient că acestea îți vor fi apărate mai bine de către suveran decât ai fi putut tu cu forțele proprii.\par
-	 	
-	 	Contractul trebuie să fie realizat pe baza unor condiții \textit{posibile}. Dacă acestea se dovedesc a fi imposibile pe parcurs, datoria persoanelor aflate sub convenție este de a le aproxima măcar în spirit, dacă nu în literă. 
-	 	
-	 	\section{Posibilitatea încălcării contractului}
-	 	
-	 	La \cite[p. 52]{Hobbesa}, Hobbes menționează un posibil contraargument pentru teoria contractului social, în care ar fi mai rațional pentru individ să profite de urma acestuia. Individul ar putea să-și justifice acțiunile prin faptul că refuzul de a renunța la drepturi i-ar aduce un mai mare bine, deoarece duce la o mai mare protejare de sine. Astfel, ar putea considera că este mai \textit{rațional} să nu-și îndeplinească partea de contract, alegând doar să se folosească de avantajele pe care ți le-a oferit celălalt.\par
-	 	
-	 	Dacă nerespectarea contractului social ar fi bună, ar rezulta că a acționa în vederea propriului \dedouble bine\sqtworight poate să meargă contrar dreptății. Prin urmare, dreptatea nu poate să fie considerată bună. Hobbes declară:\par
-	 	
-	 	\begin{displayquote}[{\cite[p. 52-53]{Hobbesa}}]
-	 		Prin așa un raționament, viciul izbutește să dobândească numele virtuții. [...]
-	 	\end{displayquote}
-	 	
-	 	Încercând să rezolve această problemă legată de către \dedouble nebun\sqtworight \parencite[p.52]{Hobbesa}, Hobbes apelează din nou la imagistica războiului:\par
-	 	
-	 	\begin{displayquote}[{\cite[p. 53]{Hobbesa}}]
-	 		Într-o alianță, fiecare membru așteaptă să fie apărat în aceeași măsură ca și fiecare altul; prim urmare, acela care ar formula opinia că este conform rațiunii să-i înșele pe cei ce-l ajută nu s-ar mai putea aștepta la vreun alt mijloc de a-și găsi siguranța, în afara celor izvorâte din propria sa putere.
-	 	\end{displayquote}
-	 	
-	 	Singura situație în care acest individ ar mai fi primit în societate ar fi printr-o simplă greșeală, deoarece este un trădător. Hobbes ne arată că \textbf{nu este posibil să supraviețuim în afara societății,} decât la un standard mult mai scăzut celui cu care am fost obișnuiți până în acel punct. Încălcarea convențiilor este în contradicție cu instinctul conservării de sine.\par
-	 	
-	 	Orice altceva și-ar dori individul să obțină deasupra contractului social ar fi un exces de zel, ceva ce nu ține de supraviețuire, deoarece aceasta (teoretic) îi este deja respectată și apărată de către suveran.\par
-	 	
-	 	În acest caz, intervine legea naturală a îngăduinței, căci toată lumea trebuie "să se străduiască a trăi în armonie cu ceilalți". Oamenii vor fi în mod natural diverși din punct de vedere al afectelor și moravurilor lor, chiar dacă sunt egali la nivel fizic și intelectual. Dacă un individ este prea greu de întreținut de către societate, va fi o simplă povară. Prin sfidarea sa a convențiilor societății din care face parte va fi, eventual, dat afară din aceasta.
-	 	
-	 	\subsection{Frica de necunoscut}
-	 	
-	 	Un mod de a combate posibilitatea excluziunii din societate ține de posibilitatea trecerii dincolo de viața lumească. Aceasta ar putea să-ți justifice încălcarea convenției, însă la nivel realist, nu poți ști ce se află dincolo de moarte. Lipsa siguranței este combătută de siguranța promisiunii făcute în cadrul unei convenții. De asemenea, această fericire de natură hedonică, care este obținută deasupra satisfacerii nevoilor de bază/de autoconservare, nu poate fi măsurată. Nu poate duce la o concluzie sigură pe care să-ți bazezi contractul.
-	 	
-	 	Prin urmare, fericirea nu este, de fapt, scopul la care trebuie să ajungă contractul social. Acesta are, în esență, scopul de a proteja indivizii.
-	 	
-	
-	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-	
-Cyberpunk a început ca o mișcare de renaștere science fiction, în mare parte datorită romanului Neuromancer (William Gibson).\footnote{Există zvonuri cum că ori Bigelow (Salza, 1994), ori scenaristul și producătorul filmului, James Cameron \parencite{bibid}, ar fi trebuit să adapteze povestirea \textit{Burning Chrome} a lui Gibson, însă proiectul nu s-a putut materializa (în mare parte deoarece nu era pe placul lui Gibson). Ce a rămas din acea adaptare s-a transformat în cele din urmă în Strange Days.} Spre deosebire de utopianismul caracteristic SF-urilor precendente, cyberpunk pune accentul pe conflictul dintre om și mașinărie, o criză a identității și o stare de anxietate care doar s-a complicat odată cu trecerea deceniilor.\break
+Date fiind popularitatea genului cyberpunk și cariera înfloritoare de care Kathryn Bigelow se bucura la începutul anilor '90, \textit{Strange Days} ar fi trebuit să fie un succes comercial. În realitate, nu a reușit să strângă nici măcar un sfert din bugetul alocat. Recenziile contemporane menționează proasta strategie de marketing drept justificare pentru eșecul filmului \parencite{McCarthy1995a}. Mulți alții critică abordarea regizoarei, considerând că discursul său politic este peticit și forțat asupra poveștii. Astfel de obiecții sunt probabil nesurprinzătoare, dat fiind că procesul lui O.J. Simpson bântuie cronicile toamnei 1995 \parencite{Willistein1995a}.\footnote{Acesta fusese achitat la doar 10 zile înainte de premiera filmului.} Ce-i drept, Bigelow a menționat că faptul că a urmărit revoltele din 1992 a motivat-o și mai tare să demareze producția pentru \textit{Strange Days}.\par
 
-Date fiind popularitatea genului cyberpunk și cariera înfloritoare de care Kathryn Bigelow se bucura la începutul anilor '90, \textit{Strange Days} ar fi trebuit să fie un succes comercial. În realitate, nu a reușit să strângă nici măcar un sfert din bugetul alocat. Recenziile contemporane menționează proasta strategie de marketing drept justificare pentru eșecul filmului (McCarthy, 1995). Mulți alții critică abordarea regizoarei, considerând că comentariul politic este peticit și forțat asupra poveștii. Astfel de obiecții sunt probabil nesurprinzătoare, dat fiind că procesul lui O.J. Simpson bântuie cronicile toamnei 1995 (Willistein, 1995). Acesta fusese achitat la doar 10 zile înainte de premiera filmului. Ce-i drept, Bigelow a menționat că faptul că a urmărit revoltele din 1992 a motivat-o și mai tare să demareze producția pentru Strange Days.\break
+Contrar \dedouble tradiției \sqtworight cyberpunk de a se refugia în speculație, camuflându-și astfel comentariul socio-politic, Bigelow este directă. Ea evită fantezismul tipic SF-ului și te subjugă unghiului subiectiv într-un efort de a crea înțelegere și empatie \parencite{Ebert1995a}. Însă audiența tipică filmelor de gen nu este atât de tolerantă la coerciție. Prin contrast, chiar dacă în prezent \textit{The Matrix} (1999, r. Lana și Lilly Wachowski) este acceptat ca fiind o alegorie clară pentru \url[experiența transgender]{https://www.washingtonpost.com/gender-identity/the-matrix-has-always-been-a-trans-story-and-now-audiences-cant-ignore-it} , când și-a avut premiera a fost digerat mai ușor datorită posibilității de ocolire a problemelor filosofice pe care le ridică. Unii au menționat că dacă filmul ar fi fost regizat de un bărbat, ar fi fost criticat pentru o abordare misogină \parencite{} (Mirasol, 2010). Visceralitatea imaginilor din \textit{Strange Days} a fost considerată gratuită, lipsită de un ochi moralizator, fiind un simplu experiment și o joacă de-a snuff film \parencite{Guthmann1995a} %%(adaugă Denby 1995)%%. 
 
-Contrar \dedouble tradiției \sqtworight cyberpunk de a se refugia în speculație, camuflându-și astfel comentariul socio-politic, Bigelow este directă. Ea evită fantezismul tipic SF-ului și te subjugă unghiului subiectiv într-un efort de a crea înțelegere și empatie (Ebert, 1995). Însă audiența tipică filmelor de gen nu este atât de tolerantă la coerciție. Prin contrast, chiar dacă în prezent The Matrix (1999, r. Lana & Lilly Wachowski) este acceptat ca fiind o alegorie clară pentru experiența transgender, când și-a avut premiera a fost digerat mai ușor datorită posibilității de ocolire a problemelor filosofice pe care le ridică. Visceralitatea imaginilor din Strange Days a fost considerată gratuită, lipsită de un ochi moralizator, fiind un simplu experiment și o joacă de-a snuff film (Denby, 1995; Guthmann, 1995). Unii au menționat că dacă filmul ar fi fost regizat de un bărbat, ar fi fost criticat pentru o abordare misogină (Mirasol, 2010). Critici similare au continuat de-a lungul carierei ei, fiind acuzată aproape 20 de ani mai târziu de propagandă CIA în Zero Dark Thirty (Vishnevetsky, 2012).\break
+Critici similare au continuat de-a lungul carierei ei, fiind acuzată aproape 20 de ani mai târziu de propagandă CIA în Zero Dark Thirty \parencite{Vishnevetsky2012a}). Cumva, a reușit să alieneze toate grupările separate ale audienței sale țintă.\par
 
-[Spusele lui Bigelow] Film was this incredible social tool that required nothing of you besides twenty minutes to two hours of your time. [@Hultkrans2010a]\break
+Într-adevăr, măiestria utilizării subiectivului face posibilă evocarea unor experiențe capabile de a simula tehnologia \dedouble SQUID\sqtworight. Realitatea virtuală este portretizată ca un asalt asupra simțurilor; fără visceralitate, fără violență, tema principală nu ar fi putut fi transmisă. Regizoarea înțelege că forța cinema-ului stă în crearea imersiunii, de apropiere într-un mod în care cuvintele pe pagină nu ar putea să o facă niciodată. Limbajul ei filmic îi permite evitarea CGI-ului; în schimb, voyeurismul devine conceptul de punte care ne apropie temporal de Los Angeles-ul creat de Bigelow \parencite{Hultkrans2010a}.\par 
 
-Într-adevăr, măiestria utilizării subiectivului face posibilă evocarea unor experiențe capabile de a simula tehnologia „SQUID”. Realitatea virtuală este portretizată ca un asalt asupra simțurilor; fără visceralitate, fără violență, tema principală nu ar fi putut fi transmisă. Regizoarea înțelege că forța cinema-ului stă în crearea imersiunii, de apropiere într-un mod în care cuvintele pe pagină nu ar putea să o facă niciodată. Limbajul ei filmic îi permite evitarea CGI-ului; în schimb voyeurismul devine conceptul de punte care ne apropie temporal de Los Angeles-ul creat de Bigelow (Hultkrans, 2010). Venind dinspre artele plastice abstracte, Bigelow s-a reorientat în
+Venind dinspre artele plastice abstracte, Bigelow s-a reorientat în anii '80 către film, simțind nevoia de a comunica idei într-o paradigmă artistică mai puțin abstractă.\par
 
-Los Angeles-ul este portretizat într-o dezvoltare așteptată, distopică, naturală care vine din urma revoltelor anului 1992. 
+\begin{displaycquote}{Hultkrans2010a}
+	Film was this incredible social tool that required nothing of you besides twenty minutes to two hours of your time.
+\end{displaycquote}
 
-Orașul din Strange Days este militarizat până-n dinți, reflectând cum poliția din Los Angeles (atât cea din film, cât și cea reală din acea perioadă) are un obicei de a ataca membri nevinovați ai grupărilor minoritare.
+În viziunea regizoarei, această versiune a Los Angelesului este rezultatul unei dezvoltări naturale de pe urma revoltelor anului 1992. Orașul este puternic militarizat, într-o încercare a poliției de a relua control asupra populației. Această decizie se reflectă mai ales asupra celor marginali, în special comunității Afro-Americane. Acest LA nu este departe în viitorul său; punând accent pe ultimele zile ale mileniului, este o exprimare a anxietăților asupra a ceea ce urmează să fie continuat și în anul 2000.\par
 
-> [!quote]
-> Even more morally questionable is the visually extraordinary material that forms the crux of the film: subjective rapes and murders that are, in the film’s context, snuff films, real-life killings marketed for kicks for hard-up seen-it-alls. [@McCarthy1995a]
+În ultimii 30 de ani, realitatea virtuală și-a pierdut din caracterul fascinant. Căștile de VR sunt greoaie, caraghioase, iar experiențele create sunt simulări imperfecte și încorsetate. SQUID este și el limitat, însă doar de amintirile pe care le prezintă.\par
 
-Bigelow a fost criticată pe larg pentru faptul că a arătat atât de realist aceste violuri, fiind cumva capabilă să-și alieneze toate publicurile țintă ale acestui film
+Dispozitivul este conceput ca o simplă bucată de gel echipată cu conectori neuronali ce facilitează accesul nemărginit la adâncimile cortexului prefrontal, dar se bucură de mistificarea pe care celuloidul a pierdut-o pe parcursul secolului XX. Oamenii nu se mai sperie de filmarea fraților Lumiere a trenului filmat din față \parencite{Willistein1995a}, deoarece peretele dintre spectator și celuloid este acum opac. Legislativul prezent în LA nu este capabil să-l controleze; SQUID se formează asemeni unui Leviathan, mai presus de suma părților sale componente.\par
 
-> [!quote]
-> “Strange Days” trades extensively in voyeurism, its retrospective sex scenes with an in-your-face Lewis repping Exhibit A. [@McCarthy1995a]
+Amintirile și informația transmisă devine un scop în sine: cu cât sunt produse mai multe, cu atât mai bine. Oamenii devin date \parencite{Vishnevetsky2012a}; simple fragmente de amintire comodificate, puse în loop și incapacitat de facultățile decizionale. Moartea inocenților este doar un prilej de plăcere pentru amatorii de senzații tari. Bigelow ni-l arată pe Lenny (Ralph Fiennes) plătind actori pentru înregistrări pentru a-și maximiza profitul. Utilizatorul SQUID devine un simplu corp gol, așteptând, \textit{cerând} să fie ocupat de către persoana dispusă să plătească prețul cerut. Persoana înregistrată este și ea un simplu instrument pentru crearea amintirilor care \textit{merită} să fie (re)trăite în detrimentul vieții reale.\par
 
+Lenny își dorește să se retragă din lume deoarece suita de amintiri favorite cu Faith (Juliette Lewis) este singurul lucru care-l mai poate face fericit. Însă omul ajunge să fie jefuit de amintiri, într-un act de refuz vehement de conștientizare a trecutului ca trecut. \textit{Jacking-in}-ul este un mecanism de apărare pentru personajele concepute de Bigelow, nu doar pentru Lenny (Palermo, 2020). Protagonistul este clișeul dealer-ului care se folosește de propria sa marfă. O portretizare similară se regăsește în \textit{Videodrome} (1983, r. David Cronenberg), însă \dedouble dependența de imagini\sqtworight este mult mai atașată de limbajul fantezist, horror, al filmului. Protagonistul lui Cronenberg practic și-o caută cu lumânarea; Lenny este mai degrabă într-o stare constantă de derivă, încercând pe cât posibil să-și mențină echilibrul moral. \textit{Videodrome} se simte ca o halucinație, ca o experiență mai degrabă apropiată de una divină, pe când \textit{Strange Days} te pune în fața faptului împlinit.\par
 
+Deoarece SQUID permite accesarea amintirilor prin conexiune directă la cortexul prefrontal, acesta presupune o lipsă a interpretării. Simțurile utilizatorului sunt asaltate nemilos, iar omul ce poartă dispozitivul este vulnerabil, incapabil să influențeze întâmplările ce-i sunt prezentate. Cât timp utilizatorul este jacked-in, este în agonie și oricând este posibil să moară din cauza suprastimulării. De aceea a fost și ilegalizat, însă asta nu oprește pe nimeni din a încerca dispozitivul oricum. Intenția moralizatoare a lui Bigelow este clară aici: când Lenny devine „martor” la cele mai inumane momente capturate, încearcă să iasă pe cât posibil. Atât el, cât și noi, din public, simțim aceeași durere, același sentiment visceral pe care nu am fi vrut să-l lăsăm să ne acapareze. În cuvintele ei:\par
 
-- it's not supposed to be in the future. it's actually right here, in 1999, putting emphasis on the turn to the new millenium
+\begin{displaycquote}{Willistein1995a}
+	It is meant to be awful. The shower scene in 'Psycho' \textemdash that dramatic fulcrum \textemdash it had to be extremely intense within the thriller construct.
+\end{displaycquote}
 
-În ultimii 30 de ani, realitatea virtuală și-a pierdut din caracterul fascinant. Căștile de VR sunt greoaie, caraghioase, iar experiențele create sunt simulări imperfecte și încorsetate. SQUID este și el limitat, însă doar de amintirile pe care le prezintă. 
-Dispozitivul este conceput ca o simplă bucată de gel echipată cu conectori neuronali ce facilitează accesul nemărginit la adâncimile cortexului prefrontal, dar se bucură de mistificarea pe care celuloidul a pierdut-o pe parcursul secolului XX. Oamenii nu se mai sperie de filmarea fraților Lumiere a trenului filmat din față (Willistein, 1995), deoarece peretele dintre spectator și celuloid este acum opac.
-Legislativul prezent în LA nu este capabil să-l controleze; SQUID se formează asemeni unui Leviathan, mai presus de suma părților sale componente.
-Amintirile și informația transmisă devine un scop în sine de manufacturing. Moartea inocenților este doar un prilej de plăcere pentru amatorii de senzații tari. Oamenii devin date (Vishnevetsky, 2012); simple fragmente de amintire comodificate, puse în loop și incapacitat de facultățile decizionale. Bigelow ni-l arată pe Lenny (Ralph Fiennes) plătind actori pentru înregistrări, pentru a-și maximiza profitul. Utilizatorul SQUID devine un simplu corp gol, așteptând, cerând să fie ocupat de către persoana dispusă să plătească prețul cerut. Persoana înregistrată este și ea un simplu instrument pentru crearea amintirilor care merită să fie (re)trăite în detrimentul vieții reale.
-*Jacking-in*, pierderea *virginității* față de „the wire” este un coping mechanism în lumea construită de Bigelow. 
+Lenny nu-și dă seama că oricât ar iubi-o pe Faith în continuare, o transformă într-un obiect prin faptul că se folosește de înregistrări pentru propriul său folos. Trăind în propriul trecut, crede că poate acesta încă se regăsește și-n prezentul exterior SQUID.\par
 
-Însuși protagonistul este captiv acestui cerc vicios. Lenny își dorește să se retragă din lume deoarece suita de amintiri favorite cu Faith este singurul lucru care-l mai poate face fericit. Însă omul ajunge să fie jefuit de amintiri, într-un act de refuz vehement de conștientizare a trecutului ca trecut. Jacking-in este un mecanism de apărare pentru personajele concepute de Bigelow, nu doar pentru Lenny. 
-Lenny este clișeul dealer-ului care se folosește de propria sa marfă. O portretizare similară se regăsește în Videodrome (1983, r. David Cronenberg), însă „dependența de imagini” este mult mai atașată de limbajul fantezist, horror, al filmului. Protagonistul lui Cronenberg practic și-o caută cu lumânarea; Lenny este mai degrabă într-o stare constantă de derivă, încercând pe cât posibil să-și mențină echilibrul moral. Videodrome se simte ca o halucinație, ca o experiență mai degrabă apropiată de una divină, pe când Strange Days te pune în fața faptului împlinit.
-Deoarece SQUID permite accesarea amintirilor prin conexiune directă la cortexul prefrontal, acesta presupune o lipsă a interpretării. Simțurile utilizatorului sunt asaltate nemilos, iar omul ce poartă dispozitivul este vulnerabil, incapabil să influențeze întâmplările ce-i sunt prezentate. Cât timp utilizatorul este jacked-in, este în agonie și oricând este posibil să moară din cauza suprastimulării. De aceea a fost și ilegalizat, însă asta nu oprește pe nimeni din a încerca dispozitivul oricum. Intenția moralizatoare a lui Bigelow este clară aici: când Lenny devine „martor” la cele mai inumane momente capturate, încearcă să iasă pe cât posibil. Atât el, cât și noi, din public, simțim aceeași durere, același sentiment visceral pe care nu am fi vrut să-l lăsăm să ne acapareze. În cuvintele ei: „It is meant to be awful. The shower scene in 'Psycho' -- that dramatic fulcrum -- it had to be extremely intense within the thriller construct.” (Willistein, 1995)
-Lenny nu-și dă seama că oricât ar iubi-o pe Faith în continuare, o transformă într-un obiect prin faptul că se folosește de înregistrări pentru propriul său folos. Trăind în propriul trecut, crede că poate acesta încă se regăsește și-n prezentul exterior SQUID. 
 Amintirile nu-și pot regăsi aceeași ființare ca realitate. Citându-l pe Marcel Proust, Roland Barthes descrie această experiență mai bine decât aș putea eu:
 
-
-\begin{displayquote}[{\cite[p. 61-62]{Barthes}}]
-	„Într-o seară de noiembrie, la puţină vreme după moartea mamei mele, puneam în ordine nişte fotografii. Nu speram să o "regăsesc", nu aşteptam nimic de la «aceste fotografii ale unei fiinţe, în faţa cărora ţi-o aminteşti mai puţin decît mulţumindu-te să te gîndeşti la ea» (Proust, 111, 886) […] Istoria este isteri­că: ea nu se constituie decît dacă este privită - iar pentru a o privi, trebuie să fii exclus din ea.” (Barthes, 2009, p. 61-62)
+\begin{displayquote}[{\cite[p. 61-62]{BarthesCameraluminoasa2009a}}}]
+	Într-o seară de noiembrie, la puţină vreme după moartea mamei mele, puneam în ordine nişte fotografii. Nu speram să o "regăsesc", nu aşteptam nimic de la «aceste fotografii ale unei fiinţe, în faţa cărora \textbf{ţi-o aminteşti mai puţin decît mulţumindu-te să te gîndeşti la ea}» (Proust, 111, 886) […] Istoria este isteri­că: ea nu se constituie decît dacă este privită - iar \textbf{pentru a o privi, trebuie să fii exclus din ea.}
 \end{displayquote}
 
-Prin contrast cu SQUID, fotografia ți se prezintă ca o reprezentare voluntară a realului, iar obiectul real nu-ți va revela niciodată esența lui (Barthes, 2009). Fotografia îți permite să te distanțezi la nevoie de obiectul reprezentat (Sontag, 2008), să lași amintirile să se piardă înapoi în negura istoriei. Mace (Angela Bassett), unul dintre singurele personaje care refuză experiența SQUID, încearcă să-l facă și pe Lenny să înțeleagă aceeași idee:
+Prin contrast cu SQUID, fotografia ți se prezintă ca o reprezentare voluntară a realului, iar obiectul real nu-ți va revela niciodată esența lui \parencite{BarthesCameraluminoasa2009a}. Fotografia îți permite să te distanțezi la nevoie de obiectul reprezentat \parencite{secSontagPlatosCavea}, să lași amintirile să se piardă înapoi în negura istoriei. Mace (Angela Bassett), unul dintre singurele personaje care refuză experiența SQUID, încearcă să-l facă și pe Lenny să înțeleagă aceeași idee:
 
-„This is your life. Right here, right now! It’s real time, you hear me? [...] Time to get real, not playback. [...] These are used emotions; time to trade them in. Memories were meant to fade, Lenny. They’re designed that way for a reason.”
-
-\begin{displayquote}[{\cite[p. 53]{Hobbesa}}]
-	Într-o alianță, fiecare membru așteaptă să fie apărat în aceeași măsură ca și fiecare altul; prim urmare, acela care ar formula opinia că este conform rațiunii să-i înșele pe cei ce-l ajută nu s-ar mai putea aștepta la vreun alt mijloc de a-și găsi siguranța, în afara celor izvorâte din propria sa putere.
+\begin{displayquote}
+	This is your life. Right here, right now! It’s real time, you hear me? [...] Time to get real, not playback. [...] These are used emotions; time to trade them in. Memories were meant to fade, Lenny. They’re designed that way for a reason.
 \end{displayquote}
-
-
-"Like many addictions, [the wire is] a social substitute for another kind of need.” (Palermo, 2020)
-- "Our memories both make us and imprison us." (Palermo 2020)
-- "On one level, this is an opportunity for Bigelow to explore the subjective and empathic potential of movies. In unbroken first-person shots, we “participate” in the armed robbery of a restaurant, we enjoy lesbian sex, and later take on the perspective of a rapist-murderer"[^3]
-- Strange Days is the Bigelow version of a Brian De Palma film—interrogating the Male Gaze of the immoral[^3]
-- "Like De Palma, she doesn’t deny or condemn the lure of sleaze. What Mace calls “the dark end of the street” is, after all, what brought us here. But the seductive quality of sensationalism reaches, like any narcotic, a point of reckoning."
-
-policing in los angeles was already quite repressive, as they attacked many members of minority groups. this shows how important it is to have a record of the objective truth for the furthering of political values (it can be a form of emancipation)
-
-“shrewdly anticipates a likely future in which visual entertainment is increasingly rooted in pure sensation.” [@McCarthy1995a]
-
-Un document obiectiv este esențial în educarea publicului. Filmul (încă, în acea perioadă) are avantajul de a fi considerat un document complet obiectiv și nepartizan.
-
-> conflicting visions of rapture and revolution divide the collective psyche, and the apolitical insulate themselves by getting high on other people’s lives.
-
-
-> [!quote]
-> Killer-voyeur, victim-voyeur, witness-voyeur—and us: a fatal four-way whose complexities are rooted to and deepened by our own participation as viewers. [@Pattison2018a]
-
-The character of LAPD Chief Strickland is likely inspired by real-life LAPD Chief Daryl Gates who became notorious for his mishandling of the Rodney King beating of 1991 and the Los Angeles Riots of 1992, which occurred when the officers who had beaten King - an event captured on video by a bystander - were acquitted by an all-white jury. Much of this film takes its themes from those two events.
-
-The film's SQUID scenes, which offer a point-of-view shot, required multi-faceted cameras and considerable technical preparation. A full year was spent building a specialized camera that could reproduce the effect of looking through someone else's eyes.
 
 The opening sequence, which features a 16-foot jump between two buildings by a stunt performer without a safety harness, took two years to coordinate and has hidden cuts.For example, the jump was filmed with a helmet camera, while the run up a staircase required a Steadicam. According to Cameron, "We designed transitions that would work seamlessly. It was a very technical scene that doesn't look technical." The sequence where Iris runs in front of a speeding freight train was shot backwards, with the train backing up. The footage was then reversed during editing.
-
-- the situation becomes complicated once it starts dealing in Snuff Film
-
-Bigelow alege să se concentreze mai mult pe dilemele morale rezultate din interacțiunea omului cu realitatea virtuală. ==amintirile sunt o monedă de schimb și un instrument perfect pentru efectele pe care le are „Male Gaze”-ul asupra societății. Documentul înregistrat aduce de la sine problematici morale despre obiectificarea experiențelor umane.==
-
-> [!question] Starting Question
-în ce context a fost scrisă Regarding the Pain of Others and how does it highlight the unrest from the turn of the millenium? there's a similar kind of unrest present in The Matrix, but it's not as personal and juicy because the Wachowski Sisters were already in the closet
-
-> [!quote]
-> Its premise feels ripped from a novel by Philip K. Dick or William Gibson. In the near future, the most addictive habit in the world is reliving other people’s memories through “clips.” [@Britt2023a]
-
-> [!question] Starting Question
-> Is the film just dark for the sake of it?
-> ['Strange Days' Probes Import Of Vicarious Living - CSMonitor.com](https://www.csmonitor.com/1995/1120/20132.html)
-
-> [!quote]
-> It's not the characters that make the movie good, but the direction on Bigelow's part: "Instead, under Bigelow’s direction, watching Strange Days is like watching a version of Blade Runner about social justice." [@Britt2023a]
-
-there's no mistake that what the movie shows is real (so you can be sure that what's going on is an actual snuff) [@Britt2023a]
-
-> [!quote]
-> Strange Days works because the movie is ultimately about more than just the gee-whiz speculation surrounding novel sci-fi technology. Lenny is confronted with his privilege, while Mace has to deal with the inherent racism contained in every single interaction she has. [@Britt2023a]
-
-> [!quote]
-> As a piece of the’80s and’90s cyberpunk mosaic, Strange Days is a bridge between Blade Runner and The Matrix. It’s more contemporary than the former, and much less interested in impressing audiences than the latter. [@Britt2023a]
-
-> [!quote]
-> And yet, with its brutal message about our addiction to nostalgia and the ways technology supports systemic racism, Strange Days was decades ahead of its time. [@Britt2023a]
-
-Viziunea filmului asupra efectului tehnologiei este mult mai rafinată decât în ce va urma după, în genul ultra saturat distopian: "This is not like TV only better… This is life." [@Jackson2014a]
-
-> [!quote]
-> it's time for Strange Days to emerge from the murky shadows and rightly stake its claim as a first-class, Terry Gilliam–level mind-fuck with serious (and, yes, occasionally ridiculous) things to say about modern life. [@Jackson2014a]
-
-> [!quote]
-> the script for Strange Days is a Phillip K. Dick–ian mash-up of cyberpunk tropes, action-flick set-pieces, and Rodney King–inspired political speeches. [@Jackson2014a]
-
-> [!quote]
-> As the 21st century approached, many in Hollywood took a shot at envisioning the end-times: Arnold Schwarzenegger with End of Days, Chris Carter with Millennium, Will Smith with Willennium—but, thanks to Bigelow's visceral direction, only Strange Days comes close to offering an allegory that still feels relevant nearly 20 years later. [@Jackson2014a]
-
-> [!quote]
-> While Strange Days isn't quite the brilliant Neuromancer-meets–Do the Right Thing mash-up that its often preachy script seems to think it is, Bigelow's careful, compassionate direction gives the movie true moral complexity. The film's treatment of sexual violence against women, particularly in the Peeping Tom–indebted murder scenes, is horrifying and skin-crawling. [@Jackson2014a]
-
-> [!quote]
-> Fittingly enough, the whole thing ends with confetti falling from the sky and a big count-down as our heroes kill the bad guys, solve the mystery, and finally share a kiss, bringing the film's love triangle to a close. It's one of the film's few false notes, a Hunger Games–ish concession to the audience's need for romance and tidy endings. Even in Kathryn Bigelow's darkest timeline, love conquers all. [@Jackson2014a]
-
----
-
-this Los Angeles looks more like technocratic Tokyo from classic cyberpunk, because it draws heavily from William Gibson and Bruce Sterling[^1]
-
-- we must remember that this film has Neo Noir sensibilities
-
-> [!quote]
-> The ultimate in cyberthrills, "clips" are bits of someone else's reality, preserved on a digital recording, that give the user a "virtual" experience -- be it sex, murder, armed robbery or a walk on the beach. All you do is slip on a headpiece that looks like petrified squid, trip into someone else's world and draw the shades on your own wretched existence. [@Guthmann1995a]
-
-> [!quote]
-> Lenny's got a hypester's veneer ("I'm your priest, your shrink, your main connection to the switchboard of the soul"), [@Guthmann1995a]
-
-> [!quote]
-> "The (O.J. Simpson) trial result echoes the film events," said Bigelow, adding that "Strange Days" was filmed during the summer and fall of 1994.
->
-> "I was there for the (Rodney King) riots and was involved in the cleanup. A running point (in `Strange Days') is that we keep treating the symptoms. Our priorities seem to be skewered. Rap music is healthy. It's a barometer. Our educational system and our economy are in disarray."[^40]
-
-Strange Days face referire clară la 1992 LA Riots, imaginând o versiune mai extremă a militarizării poliției din acea perioadă. 
-
-Blade Runner was supposed to analyse whether the artificial intelligent beings are just objects or whether they can be considered people as well, sentient beings.[^2]
-
-Ethical issues with the sharing of memories
-- we might think that if this were legal, then maybe it could just be the next generation of Pornography
-- I don't think pornography is inherently something to be fearful of
-- but we have to think about the purpose of it
-- see Susan Sontag for this particular point
-- the internet was still quite a new thing in 1995, and people were philosophising on it in alarming ways (of course, because you couldn't anticipate what it might mean for humanity at the time)[^3]
-
-
-The view on the future isn't that grim, because what is happening is actually right here next to us, ready to be analysed by curious eyes
-
-Strange Days preia foarte multe trope din scrierile lui William Gibson
-- the underworld being analogous to drug-dealing subcultures[^1]
-
-I would have personally said Strange Days owes more to Philip K Dick personally, but that's just me. Especially the whole "playing with reality and the subjectivity of perception" stuff.[^1]
-
-Maybe a bit, but the SQUID tech from Strange Days is pretty much directly lifted from William Gibson's SimStim tech:
-
-SimStim is a technology that broadcasts or records someone's sensoriums, experiences and sensory input. Persons are fit with a broadcast rig, and their senses are broadcast live, so that other persons elsewhere can experience them; or they are recorded onto cassettes as memories, which then can be replayed on a simstim deck and be re-experienced.
-
-The decks perhaps resemble portable audio players and the small ones can be worn on a belt. A deck has a grey plastic contact band/tiara that is worn across the user's forehead. The dermatrodes are basically the same technology as those of a Cyberspace simulator.
-
-https://williamgibson.fandom.com/wiki/SimStim
-
-> [!quote]
-> yeah Nero and Mace have some real "Johnny and Molly with the Serial Numbers filed off" energy. I recently re-watched strange days and i always think it feels like an alternative universe where the short story for Johnny Mnemonic was filmed… hell the two movies are the same year, i think.[^4]
-
-Există multe probleme și incompletitudini cu filmul lui Kathryn Bigelow, anume partea în care totul este frumos când se termină cu bine, când polițiștii ajung să fie pedepsiți, aproape într-o încercare de a
-
-[^2]: [Site Unreachable](https://www.youtube.com/watch?v=KHDRZD4a2l8&t=4s)
-[^3]: [Jacking-in to Kathryn Bigelow's Lost Classic 'Strange Days'](https://www.popmatters.com/kathryn-bigelow-strange-days-2648593224.html)
-
-Photography is done out of a desire for ownership
-
-> [!question] Starting Question
-> What is the emotional basis for why we make recordings?
-
-- we can recall the argument that Susan Sontag made that particular populations can't really go on a trip to unknown lands without bringing their camera with them, because it helps them be more anchored in the world around them.
-
-You might make a recording of a piece of art because you want to make sure that you're going to be able to relive that experience as often as possible.[^1] To have it be on demand kind of suggests a tendency for consumerism in us. This tendency to want to capture something in the past, the particular feeling that eluded us, is the reason why home movies make us feel Nostalgia, even though they might not be our experiences in the first place. (this is because the images themselves have a very particular intimacy to them that attracts the viewer into this limbo)
-
-You could argue that art in general is made to share experiences with others and that is the appeal of them. But the audience should know that the experience will never be the same as the one that was initially felt.
-
-- home movies introduce nostalgia, even if they're not your home movies
-- it's because of the intimacy captured in the images
-
 
 \printbibliography
 	
