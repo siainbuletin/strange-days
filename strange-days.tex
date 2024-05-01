@@ -1,5 +1,10 @@
 %%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
 \documentclass[12pt]{article}
+
+%% FONT SETTINGS %%
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\newfontfamily\greekfont[Script=Greek]{Linux Libertine 0}
 \usepackage{setspace}
 \onehalfspacing
 \setlength{\parindent}{25pt}
@@ -7,7 +12,7 @@
 %% LANGUAGE SETTINGS %%
 \usepackage{polyglossia}
 \setmainlanguage{romanian}
-\setotherlanguages{greek,english}
+\setotherlanguage{greek}
 
 \usepackage[de]{luaquotes}
 
@@ -44,7 +49,7 @@ autopunct=true]
 	\maketitle
 	
 	\begin{description}
-		\item[scoptofilie] gr. $\sigma\kappa\o\pi\o\zeta$ (skopós, „privitor”) +‎ $\phi\iota\lambda\iota\alpha$ (philía, „iubire”)\break
+		\item[scoptofilie] gr. \begin{greek}[variant=ancient] σκοπός \end{greek} (skopós, \dedouble privitor\sqtworight) +‎ \begin{greek}[variant=ancient] φιλία \end{greek} (philía, \dedouble iubire\sqtworight)\break
 		 (patologie) Dependența (sexuală) de a observa deschis acte sexuale fără jenă (spre deosebire de voyeurism)
 	\end{description}
 			 	
