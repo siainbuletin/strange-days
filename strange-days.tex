@@ -1,21 +1,26 @@
 %%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
 \documentclass[12pt]{article}
 
-%% FONT SETTINGS %%
-\usepackage{fontspec}
-\setmainfont{ETBemb RomanOSF}
-\newfontfamily\greekfont[Script=Greek]{Symbo}
-
-\usepackage{setspace}
-\onehalfspacing
-\setlength{\parindent}{25pt}
-
 %% LANGUAGE SETTINGS %%
 \usepackage{polyglossia}
 \setmainlanguage{romanian}
 \setotherlanguage[variant=poly]{greek}
 
 \usepackage[de]{luaquotes}
+
+
+%% FONT SETTINGS %%
+\usepackage{fontspec}
+\usepackage{trace}
+
+\setmainfont{ETBemb RomanOSF}
+\newfontfamily\greekfont[Script=Greek]{Symbo}
+
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{25pt}
+\defaultfontfeatures{Scale=MatchLowercase}x
+
 
 %% BACKGROUNDS FOR CAPTIONS %%
 \usepackage{xcolor}
