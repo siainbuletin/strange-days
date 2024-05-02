@@ -1,4 +1,5 @@
 %%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%
+%% PAGE FORMATTING %%
 \documentclass[12pt]{article}
 \usepackage[
 	paperwidth=7.5in,
@@ -9,25 +10,28 @@
 	right=1in
 ]{geometry}
 
+\usepackage{setspace}
+\onehalfspacing
+\setlength{\parindent}{2em}
+\defaultfontfeatures{Scale=MatchLowercase}
+
 %% LANGUAGE SETTINGS %%
 \usepackage{polyglossia}
 \setmainlanguage{romanian}
 \setotherlanguage[variant=ancient]{greek}
+\setotherlanguage{english}
 
 \usepackage[de]{luaquotes}
 
 %% FONT SETTINGS %%
 \usepackage{fontspec}
-\usepackage{trace}
-
 \setromanfont{AcademicoRegular.otf}
 \setsansfont{GillSans.ttc}
 \setmonofont{Menlo.ttc}
 
-\usepackage{setspace}
-\onehalfspacing
-\setlength{\parindent}{2em}
-\defaultfontfeatures{Scale=MatchLowercase}
+\usepackage{trace}
+
+
 
 %% QUOTATION %%
 \usepackage[
@@ -59,7 +63,7 @@ autopunct=true]
 	\maketitle
 	
 	\begin{description}
-		\item[scoptofilie] gr. \begin{greek}[variant=ancient] σκοπός \end{greek} (skopós, \dedouble privitor\sqtworight) +‎ \begin{greek}[variant=ancient] φιλία \end{greek} (philía, \dedouble iubire\sqtworight) \\
+		\item[scoptofilie] gr. \textgreek{σκοπός} (skopós, \dedouble privitor\sqtworight) +‎ \textgreek{φιλία} (philía, \dedouble iubire\sqtworight) \\
 		 (patologie) Dependența (sexuală) de a observa deschis acte sexuale fără jenă (spre deosebire de voyeurism) \\
 	\end{description}
 			 	
